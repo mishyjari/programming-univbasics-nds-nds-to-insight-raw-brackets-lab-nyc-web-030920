@@ -27,7 +27,7 @@ def directors_totals(nds)
       total += directors_database[i][:name][:movies][j][:worldwide_gross]
       j += 1
     end
-    result[directors_database[i][:name]] => total
+    result[directors_database[i][:name]] = total
     i += 1
   end
   result
